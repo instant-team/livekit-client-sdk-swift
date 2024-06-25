@@ -86,6 +86,8 @@ public class Room: NSObject, ObservableObject, Loggable {
     @objc
     public var connectionState: ConnectionState { engine._state.connectionState }
 
+    public var isReconnectingWithMode: ReconnectMode? { engine._state.isReconnectingWithMode }
+
     @objc
     public var disconnectError: LiveKitError? { engine._state.disconnectError }
 
